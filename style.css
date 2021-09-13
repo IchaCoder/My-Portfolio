@@ -1,6 +1,9 @@
 :root{
     --text-decoration: none;
     --list-style: none;
+    --border: 1px solid;
+    --primary-black: #001219;
+    --primary-blue: #7400b8;
 }
 
 *{
@@ -9,18 +12,27 @@
     padding: 0;
 }
 header{
-    border: 1px solid;
     padding: 5px;
-    background: blue;
+    background: #f1faee;
 }
 .logo{
     width: 40px;
     height: 40px;
-    margin-left: 20px;
+    margin-left: 100px;
 }
 .nav-menu ul li a{
     text-decoration: var(--text-decoration);
-    color: black;
+    color: var(--primary-black);
+    font-size: 1.2rem;
+    transition: all 0.5s 0s ease;
+}
+.nav-menu ul li a:hover{
+    text-decoration: var(--text-decoration);
+    color: var(--primary-black);
+    font-size: 1.2rem;
+    padding: 5px;
+    font-weight: bolder;
+    color: var(--primary-blue);
 }
 .nav-menu ul li{
     list-style: var(--list-style);
@@ -28,13 +40,32 @@ header{
 .nav-menu ul{
     display: grid;
     grid-template-columns: repeat(4, 1fr );
+    margin-top: 12px;
+    margin-left: 10px;
 }
 .main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0px 0.5px 10px #4a4e69;
 }
 .socials-primary{
     display: grid;
     grid-template-columns: repeat(4,3em );
     margin-right: 100px;
+    justify-content: flex-end;
+    align-content: center;
+    font-size: 1rem;
+    
+}
+
+.instagram a, .twitter a, .linked a, .github a{
+    color: var(--primary-black);
+    transition: all 0.5s 0s ease;
+}
+.instagram a:hover, .twitter a:hover, .linked a:hover, .github a:hover{
+    /* transform: rotate(180deg); */
+    color: var(--primary-blue);
+}
+.instagram:hover, .twitter:hover, .linked:hover, .github:hover{
+    transform: rotateX(180deg);
 }
