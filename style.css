@@ -40,8 +40,11 @@ header{
 .nav-menu ul{
     display: grid;
     grid-template-columns: repeat(4, 1fr );
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    grid-gap: 1em;
     margin-top: 12px;
     margin-left: 10px;
+    margin-left: -20px;
 }
 .main{
     display: grid;
@@ -53,6 +56,7 @@ header{
     grid-template-columns: repeat(4,3em );
     margin-right: 100px;
     justify-content: flex-end;
+    justify-items: center;
     align-content: center;
     font-size: 1rem;
     
@@ -62,10 +66,27 @@ header{
     color: var(--primary-black);
     transition: all 0.5s 0s ease;
 }
+.instagram, .twitter, .linked , .github {
+    color: var(--primary-black);
+    transition: all 1s 0s ease;
+}
 .instagram a:hover, .twitter a:hover, .linked a:hover, .github a:hover{
-    /* transform: rotate(180deg); */
     color: var(--primary-blue);
 }
 .instagram:hover, .twitter:hover, .linked:hover, .github:hover{
-    transform: rotateX(180deg);
+    transform: rotateX(360deg);
+}
+#home{
+    width: 85%;
+    background-image: url(./files/bg-laptop.jpg);
+    height: 90vh;
+    margin: auto;
+    background-position: center;
+    background-size: 1200px 90vh;
+    background-repeat: no-repeat;
+    
+}
+.home{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
