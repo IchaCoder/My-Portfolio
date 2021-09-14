@@ -25,6 +25,7 @@ header{
     margin-left: 100px;
 }
 .nav-menu ul li a{
+    letter-spacing: 2px;
     text-decoration: var(--text-decoration);
     color: var(--primary-black);
     font-size: 1.2rem;
@@ -144,10 +145,80 @@ header{
     box-shadow: 1px 1px 5px var(--primary-black);
 }
 
-@media only screen and (max-width: 630px){
+.menu-btn{
+    position: absolute;
+    right: 10px;
+    top: 1em;
+    cursor: pointer;
+    display: grid;
+}
+.menu-btn .fa-times:hover{
+    color: #E41111;
+}
+.menu-btn {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 680px){
+    .socials-primary{
+        grid-template-rows: repeat(4, 1fr);
+        position: absolute;
+        bottom: -7em;
+        left: 2em;
+        grid-gap: 1.7em;
+    }
+    .nav-menu ul{
+        display: block;
+        padding: 0.5em;
+        margin-top: 50px;
+        margin-left: -65px;
+        position: absolute;
+        left: 95px;
+    }
+    .nav-menu ul li{
+        padding: 1em;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+        margin-left: 50px;
+        
+    }
+    .main{
+        height: 350px;
+        /* visibility: hidden; */
+        margin: auto;
+        width: 90%;
+        border-radius: 0 0 1em 1em;
+        margin-left: 5%;
+        margin-top: 50px;
+        position: fixed;
+        height: 25em;
+    }
+    .menu-btn {
+        visibility: visible;
+        top: 0px;
+    }
+    .menu-btn .fa-times{
+        visibility: hidden;
+        
+    }
+    .menu-btn svg{
+        position: fixed;
+        right: 10px;
+        top: 0;
+    }
+    .show-btn .fa-times{
+        visibility: visible;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    }
+    .show-btn svg{
+        visibility: hidden;
+    }
     .home-opt-two{
         grid-row: 1;
-        /* border: var(--border); */
         margin-top: 2em;
         font-size: 3em;
         text-align: center;
@@ -158,20 +229,17 @@ header{
         margin-left: 3em;
     }
     #home{
-    width: 95%;
-    margin: auto;
-    height: 90vh;
-    background-position: center;
-    background-size: 1200px 90vh;
-    background-repeat: no-repeat;
-    margin-top: 5px;
-    color: var(--primary-blue);
-    margin-top: -50px;
-    }
-    header{
-        visibility: hidden;
-    }
-    .discover{
-        width: 90%;
-    }
+        width: 95%;
+        margin: auto;
+        height: 90vh;
+        background-position: center;
+        background-size: 1200px 90vh;
+        background-repeat: no-repeat;
+        margin-top: 5px;
+        color: var(--primary-blue);
+        margin-top: -50px;
+        }
+        .discover{
+            width: 90%;
+        }
 }
