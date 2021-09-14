@@ -4,6 +4,7 @@
     --border: 1px solid;
     --primary-black: #001219;
     --primary-blue: #7400b8;
+    --nav-color: #f1faee;
 }
 
 *{
@@ -16,7 +17,7 @@ html{
 }
 header{
     padding: 5px;
-    background: #f1faee;
+    background: var(--nav-color);
 }
 .logo{
     width: 40px;
@@ -124,10 +125,53 @@ header{
     width: 150px;
     height: 50px;
     background: var(--primary-blue);
-    color: var(--primary-black);
     font-size: 16px;
     font-weight: bolder;
     border-radius: 15px;
     border: none;
     margin-top: 40px;
+}
+.discover a {
+    text-decoration: none;
+    color: var(--primary-black);
+}
+.discover a:hover{
+    color: #f4f4f4;
+}
+.discover:hover{
+    border: 1px solid var(--primary-black);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px var(--primary-black);
+}
+
+@media only screen and (max-width: 630px){
+    .home-opt-two{
+        grid-row: 1;
+        /* border: var(--border); */
+        margin-top: 2em;
+        font-size: 3em;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .home-opt-one{
+        margin-top: 0;
+        margin-left: 3em;
+    }
+    #home{
+    width: 95%;
+    margin: auto;
+    height: 90vh;
+    background-position: center;
+    background-size: 1200px 90vh;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    color: var(--primary-blue);
+    margin-top: -50px;
+    }
+    header{
+        visibility: hidden;
+    }
+    .discover{
+        width: 90%;
+    }
 }
