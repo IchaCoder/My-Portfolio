@@ -170,7 +170,7 @@ header{
     .nav-menu ul{
         display: block;
         padding: 0.5em;
-        margin-top: 50px;
+        margin-top: 80px;
         margin-left: -65px;
         position: absolute;
         left: 95px;
@@ -195,6 +195,9 @@ header{
         position: fixed;
         height: 25em;
     }
+    .hide-main{
+        display: none;
+    }
     .menu-btn {
         visibility: visible;
         top: 0px;
@@ -203,10 +206,10 @@ header{
         visibility: hidden;
         
     }
-    .menu-btn svg{
+    .menu-btn .fa-bars{
         position: fixed;
-        right: 10px;
-        top: 0;
+        right: 20px;
+        top: 10px;
     }
     .show-btn .fa-times{
         visibility: visible;
@@ -214,8 +217,8 @@ header{
         top: 10px;
         right: 30px;
     }
-    .show-btn svg{
-        visibility: hidden;
+    .show-btn .fa-bars{
+       display: none;
     }
     .home-opt-two{
         grid-row: 1;
@@ -231,11 +234,11 @@ header{
     #home{
         width: 95%;
         margin: auto;
-        height: 90vh;
+        height: 100vh;
         background-position: center;
         background-size: 1200px 90vh;
         background-repeat: no-repeat;
-        margin-top: 5px;
+        
         color: var(--primary-blue);
         margin-top: -50px;
         }
