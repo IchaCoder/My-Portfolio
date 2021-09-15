@@ -5,6 +5,7 @@
     --primary-black: #001219;
     --primary-blue: #7400b8;
     --nav-color: #f1faee;
+    --box-shadow: 0px 0.5px 10px #4a4e69;
 }
 
 *{
@@ -54,7 +55,7 @@ header{
 .main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    box-shadow: 0px 0.5px 10px #4a4e69;
+    box-shadow: var(--box-shadow)
 }
 .socials-primary{
     display: grid;
@@ -114,11 +115,7 @@ header{
     padding: 5px;
     margin-left: 100px;
 }
-.home-opt-one ul li::after{
-    background: red;
-    width: 100px;
-    height: 10px;
-}
+
 .home-underline{
     margin-bottom: 10px;
 }
@@ -157,6 +154,61 @@ header{
 }
 .menu-btn {
     visibility: hidden;
+}
+.home-two{
+    width: 85%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    justify-items: center;
+    background: var(--nav-color);
+    margin-top: 1em;
+    height: 280px;
+}
+.name{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.name-section{
+    padding: 10px;
+    letter-spacing: 1px;
+    /* box-shadow: var(--box-shadow); */
+    margin-left: 5em;
+}
+.picture img{
+    width: 500px;
+    height: 280px;
+    box-shadow: var(--box-shadow);
+}
+.picture {
+    
+}
+.sub-heading{
+    word-wrap: break-word;
+    color: var(--primary-blue);
+    margin-top: 1.5em;
+    font-size: 12px;
+}
+.contact-btn{
+    margin-top: 1.5em;
+}
+.to-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    box-shadow: var(--box-shadow);
+    background: var(--nav-color);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+.to-top a {
+    color: var(--primary-black);
+}
+.to-top a:hover {
+    color: var(--primary-blue);
 }
 
 @media only screen and (max-width: 680px){
@@ -198,9 +250,13 @@ header{
     .hide-main{
         display: none;
     }
+    .home-opt-one ul li{
+        font-size: 0.9rem;
+    }
     .menu-btn {
         visibility: visible;
         top: 0px;
+        position: fixed;
     }
     .menu-btn .fa-times{
         visibility: hidden;
@@ -244,5 +300,37 @@ header{
         }
         .discover{
             width: 90%;
+        }
+        .sub-heading{
+            word-wrap: break-word;
+            text-align: center;
+            /* color: var(--primary-blue);
+            margin-top: 1.5em;
+            font-size: 12px; */
+        }
+        .name-section{
+            /* padding: 10px;
+            letter-spacing: 1px; */
+            /* box-shadow: var(--box-shadow); */
+            margin-left: 2em;
+        }
+        .home-two{
+            width: 95%;
+            margin-top: -1em;
+        }
+        .name{
+            font-size: 3rem;
+            text-align: center;
+        }
+        .contact-btn{
+            width: 60%;
+            margin-left: 15%;
+        }
+        .picture img{
+            width: 95%;
+            margin-left: 2.5%;
+        }
+        .picture{
+            grid-row: 1;
         }
 }
