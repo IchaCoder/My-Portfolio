@@ -32,6 +32,7 @@ closeBtn.addEventListener('click', function(){
 const nameDiv = document.querySelector('.name');
 
 window.addEventListener('scroll', function(){
+    // Getting the scroll point number
     const scrollPoint = window.pageYOffset;
     const nameClassList = nameDiv.classList;
     console.log(scrollPoint);
