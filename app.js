@@ -26,3 +26,19 @@ closeBtn.addEventListener('click', function(){
     headerClassList.add('hide-main');
     btnClassList.remove('show-btn')
 })
+
+
+// selecting the name
+const nameDiv = document.querySelector('.name');
+
+window.addEventListener('scroll', function(){
+    const scrollPoint = window.pageYOffset;
+    const nameClassList = nameDiv.classList;
+    console.log(scrollPoint);
+    if(scrollPoint > 405){
+        nameClassList.add('useFocus')
+    } else {
+        nameClassList.remove('useFocus')
+
+    }
+})
