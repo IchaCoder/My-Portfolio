@@ -6,6 +6,7 @@
     --primary-blue: #7400b8;
     --nav-color: #f1faee;
     --box-shadow: 0px 0.5px 10px #4a4e69;
+    --transition: all 0.5s 0s ease;
 }
 
 *{
@@ -104,7 +105,7 @@ header{
 }
 .home-opt-two{
     color: #100249;
-    font-size: 3.7rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-top:5em;
 }
@@ -217,6 +218,60 @@ header{
 .to-top a:hover {
     color: var(--primary-blue);
     transform: scale(1.5);
+}
+.services{
+    width: 85%;
+    margin: auto;
+    background: #f4f4f4;
+    box-shadow: var(--box-shadow);
+    margin-top: 2em;
+
+}
+article p{
+    font-size: 3.7rem;
+    text-align: center;
+}
+.underline-head{
+    width: 120px;
+    height: 5px;
+    background: var(--primary-blue);
+    margin: auto;
+    margin-top: -5px;
+}
+.services-points{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1em;
+}
+.discover-more{
+    font-size: 0.8rem;
+    margin-top: 0.5em;
+    color: var(--primary-black);
+}
+
+.discover-more i{
+    margin-left: 0.8em;
+}
+
+.web-design{
+    padding: 1em;
+    margin-left: 2em;
+    background: var(--nav-color);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    color: var(--primary-blue);
+}
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+    justify-items: center;
+    margin-top: 1.5em;
+}
+.web-design:hover{
+    padding: 1.5em;
+    background: var(--primary-blue);
+    color: var(--primary-black);
 }
 
 @media only screen and (max-width: 680px){
@@ -335,4 +390,21 @@ header{
         .picture{
             grid-row: 1;
         }
+        .services{
+            margin-top: 15em;
+        }
+        .services-grid{
+            grid-gap: 2em;
+            justify-items: flex-start;
+            margin-left: 30%;
+        }
+}
+
+@media only screen and (max-width: 483px){
+    .services{
+        margin-top: 20em;
+    }
+    .services-grid{
+        margin-left: 20%;
+    }
 }
