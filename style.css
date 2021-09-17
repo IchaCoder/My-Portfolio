@@ -610,7 +610,7 @@ footer{
         margin-left: -9%;
     }
     .socials{
-        margin-left: 0.8em;
+        margin-left: 1em;
     }
     .designs{
         margin-left: 20%;
@@ -619,10 +619,10 @@ footer{
         margin-left: -1em;
     }
     .home-opt-two{
-        margin-top: 0em;
+        margin-top: -0.5em;
         text-align: center;
     }
-    /* .designs img{
-        width: 90%;
-    } */
+    .designs img{
+        width: 300px;
+    }
 }
