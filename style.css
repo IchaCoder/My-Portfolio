@@ -594,7 +594,7 @@ footer{
 }
 @media only screen and (max-width: 400px){
     .home-opt-one{
-        margin-top: -11em;
+        margin-top: -9em;
     }
     .discover{
         margin-top: 1em;
@@ -619,7 +619,7 @@ footer{
         margin-left: -1em;
     }
     .home-opt-two{
-        margin-top: -2em;
+        margin-top: -0.5gitem;
         text-align: center;
     }
 }
