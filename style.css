@@ -396,6 +396,18 @@ blockquote{
     cursor: pointer;
     margin-right: 20em;
 }
+.btns .prev-btn:hover, .btns .next-btn:hover{
+    color: var(--primary-blue);
+}
+.bio-two{
+    margin-bottom: 2em;
+}
+footer{
+    color: var(--primary-blue);
+    font-size: 0.9rem;
+    margin-left: 7.5%;
+    margin-top: -1em;
+}
 @media only screen and (max-width: 680px){
     .socials-primary{
         grid-template-rows: repeat(4, 1fr);
@@ -404,6 +416,11 @@ blockquote{
         left: 2em;
         grid-gap: 1.7em;
         z-index: 100;
+    }
+    footer{
+        
+        margin-left: 1.5%;
+        
     }
     .socials{
         position: unset;
@@ -479,6 +496,9 @@ blockquote{
     }
     .show-btn .fa-bars{
        display: none;
+    }
+    .hide-bar{
+        display: none;
     }
     .home-opt-two{
         grid-row: 1;
