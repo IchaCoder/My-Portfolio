@@ -624,5 +624,6 @@ footer{
     }
     .designs img{
         width: 270px;
+        margin-left: -2.9em;
     }
 }
