@@ -158,8 +158,10 @@ prevBtn.addEventListener('click', () => {
     quote.textContent = quoteBlock;
 })
 
+// Selecting the navigation buttons
 const navBtn = document.querySelectorAll('.navBtn');
 
+// Making the navigation menu dissappear on each click
 navBtn.forEach(btn => {
     btn.addEventListener('click', () => {
     const headerClassList = header.classList;
