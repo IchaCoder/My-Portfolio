@@ -90,7 +90,7 @@ const people = [
     },
     {
         id: 3,
-        name: "peter jones",
+        name: "Peter Jones",
         job: "intern",
         img:
           "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
@@ -99,7 +99,7 @@ const people = [
       },
       {
         id: 4,
-        name: "bill anderson",
+        name: "Bill Anderson",
         job: "the boss",
         img:
           "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
