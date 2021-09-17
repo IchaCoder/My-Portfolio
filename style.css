@@ -604,9 +604,22 @@ footer{
         grid-gap: 1.5em;
     }
     .services-grid{
-        margin-left: 10%;
+        margin-left:20%;
     }
     .socials-primary{
         margin-left: -9%;
+    }
+    .socials{
+        margin-left: 0.4em;
+    }
+    .designs{
+        margin-left: 20%;
+    }
+    .product-one{
+        margin-left: -1em;
+    }
+    .home-opt-two{
+        margin-top: -2em;
+        text-align: center;
     }
 }
