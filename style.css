@@ -619,7 +619,10 @@ footer{
         margin-left: -1em;
     }
     .home-opt-two{
-        margin-top: -0.5gitem;
+        margin-top: -0.5em;
         text-align: center;
+    }
+    .designs img{
+        width: 90%;
     }
 }
