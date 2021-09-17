@@ -592,3 +592,21 @@ footer{
         margin-left: 20%;
     }
 }
+@media only screen and (max-width: 400px){
+    .home-opt-one{
+        margin-top: -11em;
+    }
+    .discover{
+        margin-top: 1em;
+    }
+    .btns{
+        margin-left: -3em;
+        grid-gap: 1.5em;
+    }
+    .services-grid{
+        margin-left: 10%;
+    }
+    .socials-primary{
+        margin-left: -9%;
+    }
+}
