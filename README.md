@@ -1,6 +1,34 @@
 # My-Portfolio
 
-Just started out with the first part of my portfolio
+A small portfolio website for myself to showcase my skills
+
+## Technologies
+
+HTML, CSS and JavaScript.
+
+## Helpful resources
+
+W3school
+Stackoverflow
+css tricks
+Youtube
+
+## Climax
+
+Finally got to revisit the transition property in CSS since I hadnt used it in a long time
+
+
+## Notes
+
+Site is totally responsive on many screens.
+
+
+Feel free to fork and make changes
+
+## Screenshots
+<img src='' />
+
+## Link
 
 The link to the live website hosted on netlify https://emmaawesome.netlify.app/
 
