@@ -464,9 +464,15 @@ footer{
         position: fixed;
         height: 25em;
         z-index: 1;
+        opacity: 1;
+        transform: translateY(0%);
+        transition: all 0.3s 0s linear;
     }
     .hide-main{
-        display: none;
+        transform: translateY(-80%);
+        z-index: 0;
+        opacity: 0;
+        transition: all 0.3s 0s linear;
     }
     .home-opt-one ul li{
         font-size: 0.9rem;
