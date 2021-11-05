@@ -294,7 +294,7 @@ div a{
 .product-two{
     font-size: 12px;
 }
-img[src="./files/akata.jpg"], img[src="./files/house.jpg"], img[src="./files/exhibit1.png"], img[src="./files/exhibit2.png"]{
+img[src="./files/akata.jpg"], img[src="./files/house.jpg"], img[src="./files/exhibit1.jpg"], img[src="./files/exhibit2.jpg"]{
     width: 300px;
     height: 200px;
     margin-left: -50px;
@@ -408,6 +408,7 @@ footer{
     margin-left: 7.5%;
     margin-top: -1em;
 }
+
 @media only screen and (max-width: 680px){
     .socials-primary{
         grid-template-rows: repeat(4, 1fr);
@@ -628,7 +629,7 @@ footer{
         margin-top: -0.5em;
         text-align: center;
     }
-    .designs img{
+    .designs div img{
         width: 270px;
         margin-left: -2.9em;
     }
