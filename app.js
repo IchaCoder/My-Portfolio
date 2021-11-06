@@ -1,11 +1,27 @@
 // Selecting elements and buttons
 const nameDiv = document.querySelector('.name');
+const projectsList = document.querySelector('.projects')
+
+
 
 const menuBtn = document.querySelector('.fa-bars');
 const menuDiv = document.querySelector('.menu-btn');
 const header = document.querySelector('.main');
 const closeBtn = document.querySelector('div > .fa-times');
 const topBtn = document.querySelector('.to-top');
+
+const projects = [
+    {
+        live:'https://roomfurnish.netlify.app/',
+        git:'https://github.com/IchaCoder/room-furnitures-page',
+        name: 'room furnitures'
+    },
+    {
+        live:'https://blogrspot.netlify.app/',
+        git:'https://github.com/IchaCoder/blogr-landing-page-main',
+        name: 'blogging site'
+    }
+]
 
 
 menuBtn.addEventListener('click', function(){
@@ -170,4 +186,17 @@ navBtn.forEach(btn => {
     headerClassList.add('hide-main');
     btnClassList.remove('show-btn')
     })
+})
+
+// Adding projects dynamically
+window.addEventListener('DOMContentLoaded', ()=>{
+    const project = projects.map((item => {
+        return `
+        <li style='margin-bottom: 1em;'><a href=${item.live}>${item.name} landing page</a><br>
+        <a href=${item.git} style="font-size: 0.7em; ">Link to the project on github</a>
+    </li>
+        `
+    }))
+    .join(' ')
+    projectsList.innerHTML = project
 })
