@@ -14,13 +14,33 @@ const projects = [
     {
         live:'https://roomfurnish.netlify.app/',
         git:'https://github.com/IchaCoder/room-furnitures-page',
-        name: 'room furnitures'
+        name: 'room furnitures',
+        tools: ["HTML", "CSS", "Vanilla Javascript"]
     },
     {
         live:'https://blogrspot.netlify.app/',
         git:'https://github.com/IchaCoder/blogr-landing-page-main',
-        name: 'blogging site'
-    }
+        name: 'blogging site',
+        tools: ["HTML", "CSS", "Vanilla Javascript"]
+    },
+    {
+        live:'https://todo-app11111.netlify.app/',
+        git:'https://github.com/IchaCoder/todo-app',
+        name: 'todo app',
+        tools: ["React", "Vanilla CSS", "Local Storage"]
+    },
+    {
+        live:'https://generate-quote-app.netlify.app/',
+        git:'https://github.com/IchaCoder/quote-generator-app',
+        name: 'quote generator',
+        tools: ["React", "Vanilla CSS", "Fetch and Context"]
+    },
+    {
+        live:'https://foodmenuapp.netlify.app/',
+        git:'https://github.com/IchaCoder/menu-items',
+        name: 'food menu',
+        tools: ["HTML", "CSS", "Vanilla Javascript"]
+    },
 ]
 
 
@@ -192,7 +212,7 @@ navBtn.forEach(btn => {
 window.addEventListener('DOMContentLoaded', ()=>{
     const project = projects.map((item => {
         return `
-        <li style='margin-bottom: 1em;'><a href=${item.live}>${item.name} landing page</a><br>
+        <li style='margin-bottom: 1em;'><a href=${item.live}>${item.name} page made with ${item.tools[0]},${item.tools[1]} and ${item.tools[2]}</a><br>
         <a href=${item.git} style="font-size: 0.7em; ">Link to the project on github</a>
     </li>
         `
